@@ -15,15 +15,15 @@ function TodoList({ todos, handleToggleComplete, handleDeleteTodo }) {
             {todo.priority === "High" && (
               <span style={{ marginLeft: "10px" }}>High</span>
             )}
-            <span style={{ marginLeft: "10px" }}>Due date: {todo.dueDate}</span>
+            <span style={{ marginLeft: "10px" }}>Due date: {todo.dueDate}</span> <br />
             {todo.task} <br />
             <button onClick={() => handleDeleteTodo(index)}>Delete</button>
-            <span
+            {/* <span
               style={{
                 textDecoration: todo.completed ? "line-through" : "none",
                 paddingLeft: "10px",
               }}
-            ></span>
+            ></span> */}
           </li>
         ))}
       </ul>
